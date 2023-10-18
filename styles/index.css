@@ -1,0 +1,22 @@
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.acesso {
+    width: 45%;
+    height: 100%;
+}
+
+#meio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#linhaVert {
+    width: 0;
+    height: 45%;
+    border: 1px solid whitesmoke;
+}
