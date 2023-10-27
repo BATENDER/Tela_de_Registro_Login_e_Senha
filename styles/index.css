@@ -10,6 +10,7 @@
 #pagina {
     width: 100%;
     height: 100vh;
+    background-color: rgb(49, 49, 49);
 }
 
 header, footer {
@@ -83,100 +84,10 @@ main {
     background-color: rgb(66, 66, 66);
 }
 
-#conteudo {
-    width: 40%;
-    padding: 20px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    background-color: rgb(49, 49, 49);
-}
-
-#acesso {
+form {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-#btnsAcesso {
-    width: 80%;
-    height: 40px;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 5px;
-    background-color: rgb(66, 66, 66);
-}
-
-.botoes {
-    width: 50%;
-    height: 100%;
-    border: none;
-    color: beige;
-    font-size: 12pt;
-    background-color: rgb(35, 177, 97);
-}
-
-#cadastro {
-    color: rgb(49, 49, 49);
-    background-color: transparent;
-    border-radius: 0 3px 3px 0;
-}
-
-#login {
-    border-radius: 3px 0 0 3px;
-}
-
-.botoes:hover {
-    text-shadow: 0 0 3px white;
-    cursor: pointer;
-}
-
-.divisao {
-    width: 90%;
-    margin: 10px 0;
-    border: rgb(35, 177, 97) 1px solid;
-    border-radius: 200%;
-}
-
-.conteudoAcesso {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.conteudoAcesso h2 {
-    text-align: center;
-    font-size: 24pt;
-    color: rgb(35, 177, 97);
-}
-
-.conteudoAcesso label {
-    margin-top: 20px;
-    font-weight: bold;
-    color: rgb(35, 177, 97);
-}
-
-.conteudoAcesso input {
-    height: 30px;
-    padding-left: 10px;
-    border: rgb(35, 177, 97) 2px solid;
-    border-radius: 5px;
-    background-color: transparent;
-}
-
-.conteudoAcesso a {
-    margin-top: 5px;
-    text-align: end;
-    color: rgb(35, 177, 97);
-}
-
-.conteudoAcesso .acessarPagina {
-    height: 40px;
-    margin-top: 30px;
+    justify-content: center;
 }
 
 footer, footer a {

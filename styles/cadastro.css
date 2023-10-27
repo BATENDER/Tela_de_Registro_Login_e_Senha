@@ -1,0 +1,45 @@
+#pLogin {
+    display: none;
+}
+
+#conteudoCadastro {
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+}
+
+.botoes {
+    width: 50%;
+    height: 100%;
+    border: none;
+    color: beige;
+    font-size: 12pt;
+    background-color: rgb(35, 177, 97);
+}
+
+.cadastro {
+    border-radius: 0 3px 3px 0;
+}
+
+.login {
+    border-radius: 3px 0 0 3px;
+}
+
+#nome {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.juncao {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.acessarPagina {
+    margin-top: 40px;
+}

@@ -5,9 +5,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/set.css">
+        <link rel="stylesheet" href="styles/entrar.css">
+        <link rel="stylesheet" href="styles/cadastro.css">
         <link rel="stylesheet" href="styles/index.css">
-        <link rel="stylesheet" href="styles/@media.css" media="screen and (max-width: 768px)">
         <link rel="shortcut icon" href="imgs/description_FILL0_wght400_GRAD0_opsz24.png" type="image/x-icon">
         <title>Página Inicial</title>
     </head>
@@ -39,33 +39,82 @@
             </header>
 
             <main>
-                <div id="conteudo">
-                    <div id="acesso">
-                        <div id="btnsAcesso">
-                            <button type="button" id="login" class="botoes">Entrar</button>
-                            <button type="button" id="cadastro" class="botoes">Cadastrar</button>
-                        </div>
-
-                        <div class="divisao"></div>
-                        
-                        <div class="conteudoAcesso">
-                            <h2>Bom ter você de volta!</h2>
-                            <label for="loginEmail">Email</label>
-                            <input type="email" placeholder="Digite aqui" id="loginEmail">
-                            <label for="loginSenha">Senha</label>
-                            <input type="password" placeholder="Digite aqui" id="loginSenha">
-                            <a href="#">
-                                <h5>Esqueci minha senha!</h5>
-                            </a>
-                            <button type="button" class="acessarPagina">Entrar</button>
+                <form id="pLogin" action="#" method="post">
+                    <div id="conteudoLogin">
+                        <div class="acesso">
+                            <div class="btnsAcesso" onclick="alterarExibicao()">
+                                <button type="button" class="login botoes">Entrar</button>
+                                <button type="button" class="cadastro botoes">Cadastrar</button>
+                            </div>
+    
+                            <div class="divisao"></div>
+                            
+                            <div class="conteudoAcesso">
+                                <h2>Bom ter você de volta!</h2>
+                                <label for="loginEmail">Email</label>
+                                <input type="email" placeholder="Digite aqui" class="loginEmail">
+                                <label for="loginSenha">Senha</label>
+                                <input type="password" placeholder="Digite aqui" class="loginSenha">
+                                <a href="#">
+                                    <h5>Esqueci minha senha!</h5>
+                                </a>
+                                <button type="submit" class="acessarPagina">Entrar</button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
+                
+                <form id="pCadastro" action="#" method="post">
+                    <div id="conteudoCadastro">
+                        <div class="acesso">
+                            <div class="btnsAcesso" onclick="alterarExibicao()">
+                                <button type="button" class="login botoes">Entrar</button>
+                                <button type="button" class="cadastro botoes">Cadastrar</button>
+                            </div>
+    
+                            <div class="divisao"></div>
+                            
+                            <div class="conteudoAcesso">
+                                <h2>Cadastre-se grátis</h2>
+                                <div id="nome">
+                                    <div class="juncao">
+                                        <label for="primeiroNome">Primeiro nome</label>
+                                        <input type="text" placeholder="Digite aqui" id="primeiroNome">
+                                    </div>
+                                    <div class="juncao">
+                                        <label for="ultimoNome">Último Nome</label>
+                                        <input type="text" placeholder="Digite aqui" id="ultimoNome">
+                                    </div>
+                                </div>
+
+                                <label for="loginEmail">Email</label>
+                                <input type="email" placeholder="Digite aqui" id="loginEmail">
+                                <label for="loginSenha">Senha</label>
+                                <input type="password" placeholder="Digite aqui" id="loginSenha">
+                                <label for="repetirSenha"> Repita sua Senha</label>
+                                <input type="password" placeholder="Digite aqui" id="repetirSenha">
+                                <button type="submit" class="acessarPagina">Cadastrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </main>
 
             <footer>
                 <h3><a href="https://github.com/BATENDER">@BATENDER</a> © 2023</h3>
             </footer>
         </div>
+
+        <script>
+            function alterarExibicao() {
+                if (pLogin.style.display == 'none') {
+                    pCadastro.style.display = 'none'
+                    pLogin.style.display = 'flex'
+                } else {
+                    pCadastro.style.display = 'flex'
+                    pLogin.style.display = 'none'
+                }
+            }
+        </script>
     </body>
 </html>
