@@ -13,44 +13,59 @@
     </head>
 
     <body>
+        <div id="pagina">
             <header>
+                <div id="home">
+                    <img src="imgs/home_FILL0_wght200_GRAD0_opsz24.svg" alt="home">
+                </div>
                 <nav>
-                    <div id="home">
-                        <img src="imgs/home_FILL0_wght200_GRAD0_opsz24.svg" alt="home">
-                    </div>
-                    <div id="botao">
-                        <ul>
-                            <a href="pages/login.html">
-                                <button>Entrar</button>
+                    <ul>
+                        <li>
+                            <a href="#" class="linkBtn">
+                                <button type="button" id="btnEntrar">
+                                    Entrar
+                                </button>
                             </a>
-                            <a href="pages/registro.html">
-                                <button>Cadastrar</button>
+                        </li>
+                        <li>
+                            <a href="#" class="linkBtn">
+                                <button type="button" id="btnCadastrar">
+                                    Cadastrar
+                                </button>
                             </a>
-                        </ul>
-                    </div>
+                        </li>
+                    </ul>
                 </nav>
             </header>
 
-        <div id="conteudo">
             <main>
-                <div class="acesso">
-                    <a href="pages/login.html">
-                        <h1>ENTRAR</h1>
-                    </a>
-                    <h4>Clique em <a href="pages/login.html">entrar</a> para ter acesso a sua conta no site</h4>
-                </div>
-                <div id="meio">
-                    <div id="linhaVert"></div>
-                    <h2>ou</h2>
-                    <div id="linhaVert"></div>
-                </div>
-                <div class="acesso">
-                    <a href="pages/login.html">
-                        <h1>CADASTRAR</h1>
-                    </a>
-                    <h4>Clique em <a href="pages/login.html">cadastrar</a> para criar uma conta no site</h4>
+                <div id="conteudo">
+                    <div id="acesso">
+                        <div id="btnsAcesso">
+                            <button type="button" id="login" class="botoes">Entrar</button>
+                            <button type="button" id="cadastro" class="botoes">Cadastrar</button>
+                        </div>
+
+                        <div class="divisao"></div>
+                        
+                        <div class="conteudoAcesso">
+                            <h2>Bom ter você de volta!</h2>
+                            <label for="loginEmail">Email</label>
+                            <input type="email" placeholder="Digite aqui" id="loginEmail">
+                            <label for="loginSenha">Senha</label>
+                            <input type="password" placeholder="Digite aqui" id="loginSenha">
+                            <a href="#">
+                                <h5>Esqueci minha senha!</h5>
+                            </a>
+                            <button type="button" class="acessarPagina">Entrar</button>
+                        </div>
+                    </div>
                 </div>
             </main>
+
+            <footer>
+                <h3><a href="https://github.com/BATENDER">@BATENDER</a> © 2023</h3>
+            </footer>
         </div>
     </body>
 </html>
